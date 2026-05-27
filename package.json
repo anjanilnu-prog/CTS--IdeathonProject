@@ -1,0 +1,24 @@
+{
+  "name": "qa-ai-copilot",
+  "version": "1.0.0",
+  "description": "QA AI Copilot - Personalized AI suggestions for QA teams",
+  "main": "server/server.js",
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "QA",
+    "AI",
+    "Copilot",
+    "Testing",
+    "Automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
